@@ -1,0 +1,68 @@
+package com.app.tester;
+
+import java.util.Scanner;
+
+import com.app.geometry.Point2D;
+
+public class TestPointArray1 {
+
+	public static int menu() {
+		int choice;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("__________________________________________");
+		System.out.println("1.Display deatils of specific point    ");
+		System.out.println("2.Display x, y co-ordinates of all points ");
+		System.out.println("3.Calculate distance between points");
+		System.out.println("4.Exit");
+		System.out.println("Select your choice");
+		System.out.println("__________________________________________");
+		choice = sc.nextInt();
+		sc.close();
+		return choice;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int choice;
+		System.out.print("Enter the number of points to plot: ");
+		int numPoints = sc.nextInt();
+		sc.nextLine();
+
+		Point2D[] points = new Point2D[numPoints];
+
+		for (int i = 0; i < numPoints; i++) {
+			System.out.print("Enter x and y coordinates for point " + (i + 1) + ": ");
+			double x = sc.nextDouble();
+			double y = sc.nextDouble();
+			points[i] = new Point2D(x, y);
+		}
+
+		do {
+			choice = menu();
+			switch (choice) {
+			case 1:
+				System.out.print("Enter the index of the point: ");
+				int index = sc.nextInt();
+				if (index >= 0 && index < numPoints) {
+					System.out.println("Details of Point " + index + ": " + points[index].getDetails());
+				} else {
+					System.out.println("Invalid index. Please retry!");
+				}
+
+				break;
+			case 2:
+
+				System.out.println("Coordinates of all points:");
+				for (int i = 0; i < numPoints; i++) {
+					System.out.println("Point " + i + ": " + points[i].getDetails());
+				}
+
+			default:
+				break;
+			}
+
+		} while (choice != 4);
+
+		sc.close();
+	}
+}

@@ -1,0 +1,23 @@
+
+public class Invoive {
+	String partNumber;
+	String partDescription;
+	int quantity;
+	double price;
+
+	public Invoive(String partNumber, String partDescription, int quantity, double price) {
+		this.partNumber = partNumber;
+		this.partDescription = partDescription;
+		this.quantity = quantity;
+		this.price = price;
+	}
+
+	public Invoive() {
+		this("", "", 0, 00);
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

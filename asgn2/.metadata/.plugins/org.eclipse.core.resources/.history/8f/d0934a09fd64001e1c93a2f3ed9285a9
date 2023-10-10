@@ -1,0 +1,17 @@
+
+public class InvoiceTest {
+	public static void main(String[] args) {
+		// Create an Invoice object
+		Invoice invoice = new Invoice("12345", "Widget", 5, 9.99, 0);
+
+		// Display invoice details
+		System.out.println("Part Number: " + invoice.getPartNumber());
+		System.out.println("Part Description: " + invoice.getPartDescription());
+		System.out.println("Quantity: " + invoice.getQuantity());
+		System.out.println("Price Per Item: $" + invoice.getPrice());
+
+		// Calculate and display the invoice amount
+		double invoiceAmount = invoice.getAmount();
+		System.out.println("Invoice Amount: $" + invoiceAmount);
+	}
+}

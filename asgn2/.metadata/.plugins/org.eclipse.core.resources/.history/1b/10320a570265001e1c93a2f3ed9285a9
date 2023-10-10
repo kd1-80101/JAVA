@@ -1,0 +1,77 @@
+package com.apple.employee;
+
+import java.util.Scanner;
+
+public class Employee {
+	String firstName;
+	String lastName;
+	double salary;
+
+	Scanner sc = new Scanner(System.in);
+
+	public Employee() {
+		this("", "", 1);
+	}
+
+	public Employee(String firstName, String lastName, double salary) {
+
+		this.firstName = firstName;
+		this.lastName = lastName;
+		if (salary > 0)
+			this.salary = salary;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		if (salary > 0)
+			this.salary = salary;
+	}
+
+	void acceptData() {
+		double sal = 0;
+		System.out.println("ENTER EMPLOYEE DETAILS");
+		System.out.print("ENTER EMPLOYEE FIRST NAME :");
+		this.firstName = sc.next();
+		System.out.print("ENTER EMPLOYEE LAST NAME :");
+		this.lastName = sc.next();
+		System.out.print("ENTER EMPLOYEE SALARY:");
+		sal = sc.nextDouble();
+		if (sal > 0)
+			this.salary = sal;
+
+	}
+	
+	
+	void displayData() {
+	
+		System.out.println("EMPLOYEE DETAILS");
+		System.out.println("EMPLOYEE FIRST NAME :"+this.firstName);
+		System.out.println("EMPLOYEE LAST NAME  :"+this.lastName);
+		System.out.print("  EMPLOYEE SALARY     :"+this.salary);
+	
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

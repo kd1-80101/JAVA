@@ -1,0 +1,13 @@
+
+public class Invoive {
+
+	public static void main(String[] args) {
+	String partNumber;
+	String partDescription;
+	int quantity;
+	double price;
+	
+
+	}
+
+}

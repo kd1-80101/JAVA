@@ -1,0 +1,22 @@
+package com.app.tester;
+
+public class TestPointArray1 {
+
+	public int menu() {
+		int choice;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("__________________________________________");
+		System.out.println("1.Display deatils of point                ");
+		System.out.println("2.Display x, y co-ordinates of all points ");
+		System.out.println("3.Display distance between points");
+		System.out.println("4.Exit");
+		System.out.println("Select your choice");
+		System.out.println("__________________________________________");
+		return choice;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
