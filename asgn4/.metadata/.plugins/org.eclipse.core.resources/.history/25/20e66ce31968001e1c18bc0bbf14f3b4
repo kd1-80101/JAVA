@@ -1,0 +1,47 @@
+package com.market.fruits;
+
+public class Fruit {
+	private String color;
+	private Double weight;
+	private String name;
+
+	private Fruit(String color, Double weight, String name) {
+
+		this.color = color;
+		this.weight = weight;
+		this.name = name;
+	}
+
+	final public String getColor() {
+		return color;
+	}
+
+	final public void setColor(String color) {
+		this.color = color;
+	}
+
+	final public Double getWeight() {
+		return weight;
+	}
+
+	final public void setWeight(Double weight) {
+		this.weight = weight;
+	}
+
+	final public String getName() {
+		return name;
+	}
+
+	final public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "[color=" + color + ", weight=" + weight + ", name=" + name + "]";
+	}
+
+	public String taste() {
+		return "no specific taste ";
+	}
+}

@@ -1,0 +1,27 @@
+package com.market.fruits;
+
+public class Orange extends Fruit {
+
+	public Orange() {
+		// TODO Auto-generated constructor stub
+	}
+	public Orange(String color, Double weight, String name, boolean fruitState) {
+		super(color, weight, name, fruitState);
+
+	}
+	@Override
+	public void acceptData() {
+		super.acceptData();
+	}
+
+	@Override
+	public void displayData() {
+		super.displayData();
+		this.taste();
+		
+	}
+	@Override
+	public String taste() {
+		return "sour taste ";
+	}
+}

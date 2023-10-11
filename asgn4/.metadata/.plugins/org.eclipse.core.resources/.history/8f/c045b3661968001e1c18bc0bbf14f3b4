@@ -1,0 +1,15 @@
+package com.market.fruits;
+
+public class Fruit {
+private String color;
+private Double weight;
+private String name;
+public Fruit(String color, Double weight, String name) {
+	
+	this.color = color;
+	this.weight = weight;
+	this.name = name;
+}
+
+
+}

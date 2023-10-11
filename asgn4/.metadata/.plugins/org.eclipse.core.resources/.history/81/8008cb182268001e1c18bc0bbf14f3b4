@@ -1,0 +1,24 @@
+package com.market.fruits;
+
+public class Mango extends Fruit {
+
+	public Mango(String color, Double weight, String name, String fruitState) {
+		super(color, weight, name, fruitState);
+	}
+@Override
+public void acceptData() {
+	super.acceptData();
+}
+
+@Override
+public void displayData() {
+	super.displayData();
+	this.taste();
+	
+}
+@Override
+public String taste() {
+	return "sweet taste ";
+}
+
+}

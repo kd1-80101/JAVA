@@ -1,0 +1,9 @@
+package com.market.fruits.tester;
+
+public class Tester {
+
+	public Tester() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.market.fruits;
+
+public class Orange extends Fruit {
+
+	public Orange(String color, Double weight, String name, String fruitState) {
+		super(color, weight, name, fruitState);
+
+	}
+
+}

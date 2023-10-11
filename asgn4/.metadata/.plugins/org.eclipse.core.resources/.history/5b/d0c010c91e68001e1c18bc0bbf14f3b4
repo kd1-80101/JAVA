@@ -1,0 +1,9 @@
+package com.market.fruits;
+
+public class Mango {
+
+	public Mango() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

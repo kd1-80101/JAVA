@@ -1,0 +1,9 @@
+package com.market.fruits;
+
+public class Orange {
+
+	public Orange() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

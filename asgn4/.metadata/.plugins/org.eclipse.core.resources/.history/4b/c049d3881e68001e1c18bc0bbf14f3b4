@@ -1,0 +1,21 @@
+package com.market.fruits;
+
+public class Apple extends Fruit {
+
+	
+	public Apple(String color, Double weight, String name, String fruitState) {
+		super(color, weight, name, fruitState);
+	
+	}
+@Override
+public void acceptData() {
+	super.acceptData();
+}
+
+@Override
+public void displayData() {
+	super.displayData();
+	
+}
+
+}
