@@ -52,7 +52,7 @@ public class Fruit {
 
 	@Override
 	public String toString() {
-		return "\ncolor =" + color + "\n weight =" + weight + "\n name =" + name + "";
+		return "color =" + color + "\n weight =" + weight + "\n name =" + name + "";
 	}
 
 	public String taste() {

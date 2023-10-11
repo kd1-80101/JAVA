@@ -78,13 +78,12 @@ public class Tester {
 			case 5:
 				for (Fruit arr : basket) {
 					if (arr != null) {
-						if (arr.getFruitState()) {
-							System.out.println(arr.toString());
-							System.out.println(arr.taste());
-							if (arr.isfresh())
-								System.out.println(arr.getName() + " is Fresh");
-
-						} 
+						System.out.println(arr.toString());
+						arr.taste();
+						if (arr.isfresh())
+							System.out.println(arr.getName() + " is Fresh");
+						else
+							System.out.println(arr.getName() + " is Stale");
 					}
 				}
 				break;
