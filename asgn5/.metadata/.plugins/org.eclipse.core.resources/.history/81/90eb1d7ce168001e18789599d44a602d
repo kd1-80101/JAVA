@@ -1,0 +1,60 @@
+package com.company.employee;
+
+import java.util.Scanner;
+
+public class Employee {
+	private String empid;
+	private String name;
+	private double salary;
+
+
+
+	public Employee() {
+		this("","",0.0);
+	}
+	public Employee(String empid, String name, double salary) {
+		this.empid = empid;
+		this.name = name;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return " [\nempid=" + empid + "\nname=" + name + "\nsalary=" + salary + "\n]";
+	}
+	public String getEmpid() {
+		return empid;
+	}
+	public void setEmpid(String empid) {
+		this.empid = empid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	private void accept(Scanner sc) {
+		System.out.println("___________________________________");
+		System.out.print("ENTER THE EMPLOYEE ID :");
+		this.empid=sc.next();
+		System.out.print("ENTER THE NAME :");
+		this.name=sc.next();
+		System.out.println("___________________________________");
+	}
+
+	private void display() {
+		System.out.println("___________________________________");
+		System.out.println("EMPLOYEE ID   : "+this.empid);
+		System.out.println("EMPLOYEE NAME : "+this.name);
+		System.out.println("EMPLOYEE SALARY : "+this.salary);
+		System.out.println("___________________________________");
+	}
+	private void calculateTotalSalary();
+}

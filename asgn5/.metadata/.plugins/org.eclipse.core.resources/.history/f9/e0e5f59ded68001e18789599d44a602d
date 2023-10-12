@@ -1,0 +1,23 @@
+package com.company.employee;
+
+public class Tester {
+
+	public static int menu() {
+		
+		System.out.println("__________________________________________________");
+		System.out.println("                       MENU                       ");
+		System.out.println("1.ADD SALARIED EMPLOYEE");
+		System.out.println("2.ADD HOURLY PAID EMPLOYEE");
+		System.out.println("3.ADD COMMISION EMPLOYEE");
+		System.out.println("4.ADD BASE_SALARIED EMPLOYEE");
+		System.out.println("5.DISPLAY ALL EMPLOYEE");
+		System.out.println("6.INCREMENT SALARIED EMPLOYEE");
+		System.out.println("__________________________________________________");		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

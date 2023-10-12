@@ -1,0 +1,31 @@
+package com.company.employee;
+
+import java.util.Scanner;
+
+abstract public class Employee {
+	private String socialSecurityNumber;
+	private String firstName;
+	private String lastName;
+
+
+
+	public void accept(Scanner sc) {
+		System.out.println("___________________________________");
+		System.out.print("ENTER THE EMPLOYEE SOCIAL SECURITY NUMBER :");
+		this.socialSecurityNumber=sc.next();
+		System.out.print("ENTER THE FIRST NAME :");
+		this.firstName=sc.next();
+		System.out.print("ENTER THE LAST NAME :");
+		this.lastName=sc.next();
+		System.out.println("___________________________________");
+	}
+
+	public void display() {
+		System.out.println("___________________________________");
+		System.out.println("EMPLOYEE ID   : "+this.empid);
+		System.out.println("EMPLOYEE NAME : "+this.name);
+		System.out.println("EMPLOYEE SALARY : "+this.salary);
+		System.out.println("___________________________________");
+	}
+	abstract  void calculateTotalSalary();
+}

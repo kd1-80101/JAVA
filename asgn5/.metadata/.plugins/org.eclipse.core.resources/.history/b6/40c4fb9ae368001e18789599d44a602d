@@ -1,0 +1,27 @@
+package com.company.employee;
+
+public class SalariedEmployee extends Employee {
+
+	private double hourlyRate;
+	public SalariedEmployee() {
+	this("-","-",0.00);
+	}
+
+	public SalariedEmployee(String empid, String name, double salary) {
+		super(empid, name, salary);
+		
+	}
+	
+
+	@Override
+	public String toString() {
+		return "SalariedEmployee =" + super.toString() + "Hourly paid :"+this.hourly();
+	}
+
+	@Override
+	void calculateTotalSalary() {
+		
+
+	}
+
+}

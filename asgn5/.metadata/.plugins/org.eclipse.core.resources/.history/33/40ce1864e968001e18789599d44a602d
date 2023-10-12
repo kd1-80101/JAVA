@@ -1,0 +1,16 @@
+package com.company.employee;
+
+public class CommissionEmployee extends Employee {
+
+	public CommissionEmployee(String socialSecurityNumber, String firstName, String lastName) {
+		super(socialSecurityNumber, firstName, lastName);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	void calculateTotalSalary() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

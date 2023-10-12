@@ -1,0 +1,15 @@
+package com.company.employee;
+
+public class BasePluseCommissionEmployee extends CommissionEmployee {
+
+	public BasePluseCommissionEmployee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public BasePluseCommissionEmployee(String socialSecurityNumber, String firstName, String lastName, double grossSale,
+			double commissionRate) {
+		super(socialSecurityNumber, firstName, lastName, grossSale, commissionRate);
+		// TODO Auto-generated constructor stub
+	}
+
+}

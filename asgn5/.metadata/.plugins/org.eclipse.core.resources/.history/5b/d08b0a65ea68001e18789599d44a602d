@@ -1,0 +1,37 @@
+package com.company.employee;
+
+import java.util.Scanner;
+
+public class CommissionEmployee extends Employee {
+
+	private double grossSale;
+	private double commissionRate;
+
+
+	public CommissionEmployee() {
+		this("-","-","-",0.0,0.0);
+	}
+
+
+	public CommissionEmployee(String socialSecurityNumber, String firstName, String lastName, double grossSale,
+			double commissionRate) {
+		super(socialSecurityNumber, firstName, lastName);
+		this.grossSale = grossSale;
+		this.commissionRate = commissionRate;
+	}
+
+	@Override
+	public void accept(Scanner sc) {
+		super.accept(sc);
+		System.out.println("ENTER THE GROSS SALES :");
+		this.grossSale=sc.nextDouble();
+		System.out.println("ENTER THE COMMISION RATE :");
+		this.commissionRate=sc.nextDouble();
+	}
+	@Override
+	void calculateTotalSalary() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

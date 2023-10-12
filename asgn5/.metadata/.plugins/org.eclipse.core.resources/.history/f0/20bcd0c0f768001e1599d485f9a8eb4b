@@ -1,0 +1,51 @@
+package com.company.employee;
+
+import java.util.Scanner;
+
+public class HourlyEmployee extends Employee {
+	private double hourlyWage;
+	private int hoursWorked;
+	private double totalSalary;
+
+	public HourlyEmployee() {
+		this("","","",0.0,0);
+	}
+
+	public HourlyEmployee(String socialSecurityNumber, String firstName, String lastName, double hourlyWage,
+			int hoursWorked) {
+		super(socialSecurityNumber, firstName, lastName);
+		this.hourlyWage = hourlyWage;
+		this.hoursWorked = hoursWorked;
+	}
+
+	@Override
+	public void accept(Scanner sc) {
+		super.accept(sc);
+		System.out.println("ENTER THE HOURS WORKED");
+		this.hoursWorked=sc.nextInt();	
+		System.out.println("ENTER THE HOURLY WAGES");
+		this.hourlyWage=sc.nextInt();
+	}
+
+	@Override
+	public String toString() {
+		return "HourlyEmployee [\n"+super.toString()+"\nhourlyWage=" + hourlyWage + "\nhoursWorked=" + hoursWorked + "\ntotalSalary="
+				+ totalSalary + "]";
+	}
+
+	@Override
+	public void display() {
+		super.display();
+		System.out.println("EMPLOYEE HOURLY SALARY :"+this.totalSalary);
+	}
+	@Override
+	void calculateTotalSalary() {
+		if(this.hoursWorked <= 40) {
+			this.totalSalary = this.hourlyWage *this.hoursWorked;
+		}
+		else if(this.hoursWorked > 40) {
+			this.totalSalary= ((40* this.hourlyWage)+((this.hoursWorked-40)*this.hourlyWage*1.5) );
+		}
+	}
+
+}

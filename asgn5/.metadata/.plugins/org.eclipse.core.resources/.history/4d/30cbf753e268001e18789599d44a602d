@@ -1,0 +1,20 @@
+package com.company.employee;
+
+public class SalariedEmployee extends Employee {
+
+	public SalariedEmployee() {
+	this("-","-",0.00);
+	}
+
+	public SalariedEmployee(String empid, String name, double salary) {
+		super(empid, name, salary);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	void calculateTotalSalary() {
+		
+
+	}
+
+}

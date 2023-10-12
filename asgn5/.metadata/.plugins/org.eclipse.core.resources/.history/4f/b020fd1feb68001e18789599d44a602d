@@ -1,0 +1,19 @@
+package com.company.employee;
+
+public class BasePluseCommissionEmployee extends CommissionEmployee {
+
+	private double baseSalary;
+
+
+	public BasePluseCommissionEmployee() {
+
+	}
+
+	public BasePluseCommissionEmployee(String socialSecurityNumber, String firstName, String lastName, double grossSale,
+			double commissionRate, double baseSalary) {
+		super(socialSecurityNumber, firstName, lastName, grossSale, commissionRate);
+		this.baseSalary= baseSalary;
+	}
+
+
+}

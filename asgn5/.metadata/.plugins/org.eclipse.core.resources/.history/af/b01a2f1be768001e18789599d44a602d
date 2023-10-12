@@ -1,0 +1,26 @@
+package com.company.employee;
+
+public class HourlyEmployee extends Employee {
+	private double hourlyWage;
+	private int hoursWorked;
+	
+	public HourlyEmployee() {
+	this("","","",0.0,0);
+	}
+
+	public HourlyEmployee(String socialSecurityNumber, String firstName, String lastName, double hourlyWage,
+			int hoursWorked) {
+		super(socialSecurityNumber, firstName, lastName);
+		this.hourlyWage = hourlyWage;
+		this.hoursWorked = hoursWorked;
+	}
+
+
+
+	@Override
+	void calculateTotalSalary() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

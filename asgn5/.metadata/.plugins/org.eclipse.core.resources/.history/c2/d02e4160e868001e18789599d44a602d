@@ -1,0 +1,49 @@
+package com.company.employee;
+
+import java.util.Scanner;
+
+public class SalariedEmployee extends Employee {
+private double weeklySalary=0;
+
+
+
+	public SalariedEmployee() {
+	this("","","",0.0);
+}
+
+	public SalariedEmployee(String socialSecurityNumber, String firstName, String lastName, double weeklySalary) {
+	super(socialSecurityNumber, firstName, lastName);
+	this.weeklySalary = weeklySalary;
+}
+
+	@Override
+		public void accept(Scanner sc) {
+			super.accept(sc);
+			System.out.println("ENTER WEEKLY SALARY :");
+			weeklySalary=sc.nextDouble();
+		}
+@Override
+	public void display() {
+		super.display();
+		System.out.println("EMPLOYEE SALARY : "+this.weeklySalary);
+		
+	}
+
+
+
+public double getWeeklySalary() {
+	return weeklySalary;
+}
+
+public void setWeeklySalary(double weeklySalary) {
+	this.weeklySalary = weeklySalary;
+}
+
+@Override
+	void calculateTotalSalary() {
+		if(this.weeklySalary == 0)
+			setWeeklySalary(weeklySalary);
+		
+	}
+
+}

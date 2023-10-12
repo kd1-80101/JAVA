@@ -1,0 +1,45 @@
+package com.company.employee;
+
+import java.util.Scanner;
+
+public class BasePluseCommissionEmployee extends CommissionEmployee {
+
+	private double baseSalary;
+private double totalSalary;
+
+	public BasePluseCommissionEmployee() {
+		this("-","-","-",0.0,0.0,0.0);
+	}
+
+	public BasePluseCommissionEmployee(String socialSecurityNumber, String firstName, String lastName, double grossSale,
+			double commissionRate, double baseSalary) {
+		super(socialSecurityNumber, firstName, lastName, grossSale, commissionRate);
+		this.baseSalary= baseSalary;
+	}
+
+
+	@Override
+	public void accept(Scanner sc) {
+		super.accept(sc);
+		System.out.println("ENTER THE BASIC SALARY : ");
+		this.baseSalary=sc.nextDouble();	}
+
+	@Override
+	public void display() {
+		super.display();
+		System.out.println("EMPLOYEE SALARY : "+ this.totalSalary);
+	}
+
+	@Override
+	void calculateTotalSalary() {
+		super.calculateTotalSalary();
+		this.totalSalary= super.getTotalSalary() + this.baseSalary;
+	}
+
+	@Override
+	public String toString() {
+		return "\nBasePluseCommissionEmployee ["+super.toString()+"\nbaseSalary=" + baseSalary + "\ntotalSalary=" + totalSalary + "\n]\n";
+	}
+
+	
+}
