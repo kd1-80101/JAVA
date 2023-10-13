@@ -1,0 +1,28 @@
+package com.exception;
+
+import com.app.geometry.Point2D;
+
+public class Circle {
+
+	private double diameter;
+	private Point2D centreOfCircle;
+
+	public Circle() {
+		this(100, 0, 0);
+	}
+
+	public Circle(double diameter, double x, double y) {
+		this.diameter = diameter;
+		this.centreOfCircle = new Point2D(x, y);
+	}
+	
+	private void accept(Scanner sc) {
+		System.out.println("ENTER THE DIAMETER OF CIRCLE");
+		this.diameter=sc.nextDouble();
+		
+
+	}
+	
+	
+
+}

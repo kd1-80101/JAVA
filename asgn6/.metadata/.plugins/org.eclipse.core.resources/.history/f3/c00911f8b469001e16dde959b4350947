@@ -1,0 +1,19 @@
+package com.exception;
+
+import com.app.geometry.Point2D;
+
+public class Circle {
+
+	private double diameter;
+	private Point2D centreOfCircle;
+
+	public Circle() {
+		this(0, 0, 0);
+	}
+
+	public Circle(double diameter, double x, double y) {
+		this.diameter = diameter;
+		this.centreOfCircle = new Point2D(x, y);
+	}
+
+}

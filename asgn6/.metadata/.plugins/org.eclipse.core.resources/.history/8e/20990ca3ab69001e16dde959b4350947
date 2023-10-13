@@ -1,0 +1,9 @@
+
+public class CexceptionLineTooLong {
+
+	private String stringInput;
+	
+	public void accept() {
+	}
+	}
+}

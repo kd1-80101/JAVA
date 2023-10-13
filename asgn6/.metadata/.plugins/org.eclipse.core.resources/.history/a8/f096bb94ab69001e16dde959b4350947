@@ -1,0 +1,9 @@
+
+public class ExceptionLineTooLong {
+
+	private String stringInput;
+	
+	public void accept() {
+	}
+	}
+}

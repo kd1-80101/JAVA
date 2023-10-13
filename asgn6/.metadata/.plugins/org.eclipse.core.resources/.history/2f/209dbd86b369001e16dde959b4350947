@@ -1,0 +1,8 @@
+package com.ecception;
+
+public class Circle {
+
+	private double diameter;
+	private Point2D centreOfCircle;
+	
+}

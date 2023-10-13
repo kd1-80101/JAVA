@@ -1,0 +1,21 @@
+package com.exception;
+
+import java.util.Scanner;
+
+public class Tester {
+public static void main(String[] args) {
+	Scanner sc= new Scanner();
+	
+	Circle circle= new Circle();
+	try {
+	circle.accept(sc);
+}
+	catch(CircleException e)
+	{
+		e.printStackTrace();
+	}
+	finally{
+		sc.close();
+	}
+}
+}

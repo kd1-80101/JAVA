@@ -1,0 +1,14 @@
+package com.exception;
+
+import java.util.Arrays;
+
+public class CircleException extends Exception {
+	
+
+	@Override
+	public String toString() {
+		return "CircleException [" + getMessage() + "]";
+	}
+
+	
+}

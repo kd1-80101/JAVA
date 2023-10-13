@@ -1,0 +1,24 @@
+package asgn6Q1logic2;
+
+import java.util.Scanner;
+
+public class Tester1 {
+
+	public static void main(String[] args) {
+		try(Scanner sc= new Scanner(System.in);) {
+			String inputString;
+			System.out.println("Please enter the string ");
+			inputString= sc.next();
+
+			if(inputString.length() > 80)
+				throw new ExceptionLineTooLong1("ENTERED STRING IS TOO LONG ")	 	 
+				else
+					System.out.println("ENTERED STRING : "+inputString);
+		}
+		catch (ExceptionLineTooLong1 e) {
+			
+			
+		}
+	}
+
+}

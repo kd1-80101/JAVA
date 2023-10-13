@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ExceptionLineTooLong {
+
+	private String stringInput = null;
+
+	public void accept(Scanner sc) throws IOException {
+		System.out.println("PLEASE ENTER THE STRING ");
+		String temp = sc.next();
+		if (temp.length() > 10) {
+			throw new IOException("INPUTED STRING IS TO LONG MAX SIZE ALLOWED 10");
+		} else
+			stringInput = temp;
+
+	}
+
+	@Override
+	public String toString() {
+		return "[stringInput=" + stringInput + "]";
+	}
+	
+	
+}
