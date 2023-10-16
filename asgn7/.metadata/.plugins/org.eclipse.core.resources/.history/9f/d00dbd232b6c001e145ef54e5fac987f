@@ -1,0 +1,17 @@
+package com.sunbeam.asgn7;
+
+public class AsgnQ_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "abcd";
+		String str2 = "abcd";
+		String str3 = "ab";
+
+		if (str.equals(str2))
+			System.out.println("Strings " + str + " and " + str2 + " are Equal");
+		System.out.println("Strings " + str + " and " + str2 + " are not Equal");
+
+	}
+
+}

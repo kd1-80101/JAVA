@@ -1,0 +1,18 @@
+package com.sunbeam.asgn7;
+
+public class AsgnQ_2 {
+	public static String reverseString(String str) {
+		StringBuilder sb = new StringBuilder(str);
+		sb.reverse();
+		return sb.toString();
+	}
+
+	public static void main(String[] args) {
+
+
+		String str = "abcdefghijklmnopqrstuvwxyz";
+		System.out.println(reverseString(str));
+
+	}
+
+}

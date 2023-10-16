@@ -1,0 +1,19 @@
+package com.sunbeam.asgn7;
+
+public class AsgnQ_2 {
+	public static void main(String[] args) {
+		String inputString = "This is a sample string with several words";
+
+		// Remove leading and trailing white spaces using trim()
+		inputString = inputString.trim();
+
+		// Split the string by one or more whitespace characters
+		String[] words = inputString.split("\\s+");
+
+		// Count the number of words using the length of the resulting array
+		int wordCount = words.length;
+
+		System.out.println("Input String: " + inputString);
+		System.out.println("Number of words: " + wordCount);
+	}
+}
