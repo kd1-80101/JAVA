@@ -9,7 +9,7 @@ class CompareBooks implements Comparator<BookShop>{
 
 	@Override
 	public int compare(BookShop arg0, BookShop arg1) {
-		int diff= arg0.getIsbn().compareTo(arg1.getIsbn());
+		int diff= -Double.compare(arg0.getPrice(), arg1.getPrice());
 		return diff;
 	}
 	
@@ -34,12 +34,13 @@ public class BookTesting {
 	public static void main(String[] args) {
 		int choice;
 		int count = 0;
+		BookShop b1;
 		Scanner sc = new Scanner(System.in);
 		List<BookShop> list = new ArrayList<BookShop>();
 		while ((choice = menu(sc)) != 0) {
 			switch (choice) {
 			case 1: {
-				BookShop b1 = new BookShop();
+				b1 = new BookShop();
 				b1.acceptData(sc);
 				list.add(b1);
 			}
