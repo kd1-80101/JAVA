@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BookShop.java&apos; to &apos;Asgn4TreeHashSetTestingDescPriceComparator/src/com.sunbeam&apos;&#x0A;- Original project: &apos;asgn5StoreBooksInHashMap&apos;&#x0A;- Destination element: &apos;Asgn4TreeHashSetTestingDescPriceComparator/src/com.sunbeam&apos;&#x0A;- Original element: &apos;com.sunbeam.BookShop.java&apos;" description="Copy compilation unit" destination="=Asgn4TreeHashSetTestingDescPriceComparator/src&lt;com.sunbeam" element1="/src&lt;com.sunbeam{BookShop.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1697710588623" units="1" version="1.0"/>
+</session>

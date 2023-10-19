@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;BookShop.java&apos; to &apos;asgn5StoreBooksInHashMap/src&apos;&#x0A;- Original project: &apos;Asgn4TreeHashSetTestingDescPriceComparator&apos;&#x0A;- Destination element: &apos;asgn5StoreBooksInHashMap/src&apos;&#x0A;- Original element: &apos;com.sunbeam.BookShop.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=asgn5StoreBooksInHashMap/src" element1="/src&lt;com.sunbeam{BookShop.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1697710573380" units="1" version="1.0"/>
+</session>
