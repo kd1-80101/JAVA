@@ -35,7 +35,9 @@ public class StoringBooksInHashMap {
 				else
 					System.out.println("The Book You are Searching is not found :");
 				break;
-			
+			case 3:
+				Set<Entry<String, BookShop>> a =map.entrySet();
+				
 			}
 		}
 	}

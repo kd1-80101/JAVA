@@ -1,10 +1,8 @@
 package com.sunbeam;
 
-import java.util.Map.Entry;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
 public class StoringBooksInHashMap {
 
@@ -28,14 +26,11 @@ public class StoringBooksInHashMap {
 				break;
 			case 2:
 				System.out.println("Enter the Book id to search");
-				String isbn = sc.next();
-				BookShop f = map.get(isbn);
-				if (f != null)
-					System.out.println("The Book You are Searching is found :" + f);
-				else
-					System.out.println("The Book You are Searching is not found :");
+				String isbn=sc.next();
+				
 				break;
-			
+			default:
+				break;
 			}
 		}
 	}

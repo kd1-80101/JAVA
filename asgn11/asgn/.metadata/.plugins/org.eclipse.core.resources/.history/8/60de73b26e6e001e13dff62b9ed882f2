@@ -1,6 +1,6 @@
 package com.sunbeam;
 
-import java.util.Map.Entry;
+import java.security.KeyStore.Entry;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -35,7 +35,9 @@ public class StoringBooksInHashMap {
 				else
 					System.out.println("The Book You are Searching is not found :");
 				break;
-			
+			case 3:
+				Set<Entry<String,BookShop>> a =map.entrySet();
+				
 			}
 		}
 	}

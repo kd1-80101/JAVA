@@ -1,10 +1,8 @@
 package com.sunbeam;
 
-import java.util.Map.Entry;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
 public class StoringBooksInHashMap {
 
@@ -35,7 +33,7 @@ public class StoringBooksInHashMap {
 				else
 					System.out.println("The Book You are Searching is not found :");
 				break;
-			
+		
 			}
 		}
 	}

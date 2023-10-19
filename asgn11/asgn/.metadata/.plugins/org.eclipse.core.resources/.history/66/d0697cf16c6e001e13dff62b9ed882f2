@@ -1,0 +1,16 @@
+package com.sunbeam;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class StoringBooksInHashMap {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int choice;
+		BookShop book;
+		Map<String, BookShop> map = new HashMap<>();
+	}
+
+}
