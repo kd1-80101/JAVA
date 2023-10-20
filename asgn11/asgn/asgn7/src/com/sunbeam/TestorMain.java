@@ -27,6 +27,12 @@ public class TestorMain {
 		System.out.println("c2.getSal() :" + c2.getSal());// c2.getSal() :35152.21
 		System.out.println("c2.calcIncentives() :" + c2.calcIncentives());// c2.calcIncentives() :0.0
 
+		Emp[] arr = new Emp[3];
+		arr[0] = new Manager(25000.2, 1556.231);
+		arr[1] = new Labor(700, 41.56);
+		arr[2] = new Clerk(35152.21);
+		double sal = Emp.calcTotalIncome(arr);
+		System.out.println("total of sal of all " + sal);
 	}
 
 }
