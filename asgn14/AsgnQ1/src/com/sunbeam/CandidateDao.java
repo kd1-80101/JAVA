@@ -26,16 +26,10 @@ public class CandidateDao implements AutoCloseable {
 	}
 
 	// add new candidate
-	public int addNewCandidate(Scanner sc) throws SQLException {
+	public int addNewCandidate(String name, String pname, int votes) throws SQLException {
 		String sql = "insert into candidates values(default,?,?,?)";
 		try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-			System.out.println("Enter information of candidate to add:");
-			System.out.println("Enter the name :");
-			String name = sc.next();
-			System.out.println("Enter the  party name :");
-			String pname = sc.next();
-			System.out.println("Enter the number of votes :");
-			int votes = sc.nextInt();
+			
 			stmt.setString(1, name);
 			stmt.setString(2, pname);
 			stmt.setInt(3, votes);
